@@ -1,0 +1,21 @@
+{%extends 'testpr/index.html'%}
+
+{%block category%}
+<div class="category">
+
+    {%for i in category%}
+        <strong>{{i.name}}</strong>
+    {%endfor%}
+    <ul>
+{%for x in subcategories%}
+        <li>{{x.name}}</li>
+    {%endfor%}
+        </ul>
+</div>
+{%endblock%}
+
+{%block products%}
+{%for p in products%}
+{{p.name}}
+{%endfor%}
+{%endblock%}
