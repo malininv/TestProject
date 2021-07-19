@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    {%load static%}
+    <link link rel="stylesheet" href="{% static 'testpr/main.css'%}">>
+</head>
+<body>
+<form>
+    <input type="text">
+</form>
+<p>Адресная строка: </p>
+<div class="main-wrapper">
+<div class="category">
+{% for category in categories%}
+    {{category.category_name}}
+    {%endfor%}
+</div>
+    <div class="product-list">
+    {% for product in products %}
+        <div class="product-container">{{product.product_name}}
+        {%endfor%}</div>
+</div>
+    </div>
+</body>
+</html>

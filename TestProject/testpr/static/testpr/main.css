@@ -1,0 +1,14 @@
+.main-wrapper {
+
+    display: flex;
+}
+
+.category {
+    display: inline-block;
+    width: 150px;
+    border: 2px solid black;
+}
+
+.pproduct-list {
+    display: inline-block;
+}
